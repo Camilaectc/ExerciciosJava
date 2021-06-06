@@ -1,1 +1,3 @@
-# ExerciciosJava
+# Exercícios em Java<h1>
+<p>Olá, este repositorio foi criado para salvar a resolução dos exercícios praticados em aula.</p><p>Nele irá conter alguns exercícios que realizo em minha gradução de Análise e Desenvolvimentos de Sistema e também do curso Java completo pela plataforma Udemy.</p><p>Até o presente momento estão disponibilizados exercícios referentes aos comandos basicos.</p> <p>Cada exercicio terá sua proposta acima para que seja possível realizar a análise do codigo inserido logo abaixo.</p> 
+<p>Os mesmos foram produzidos em Java JDK 11 (LTS) utilizando a IDE Eclipse 2021-03 (4.19).</p>

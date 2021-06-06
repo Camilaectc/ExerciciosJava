@@ -1,0 +1,49 @@
+    /* Programa tem como objetivo informar os dados basicos necessarios para realizar o envio de uma remessa internacional, lendo o país informado*/
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+
+    String pais, resp;
+
+    System.out.println("Para qual dos paises abaixo ou continente será seu envio? ");
+    System.out.println("EUA, Europa, Canada, Argentina, Chile, Australia, Mexico, Outro:");
+
+    resp = sc.next();
+
+    if (resp.equals("EUA")) {
+      pais = "conta, beneficiario e SWIFT ou ABA";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Europa")) {
+      pais = "IBAN, beneficiario e SWIFT";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Canada")) {
+      pais = "conta, beneficiario, SWIFT e transit number";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Argentina")) {
+      pais = "conta, nome do beneficiario, SWIFT, CUIT e CBU";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Chile")) {
+      pais = "conta, nome do beneficiario, SWIFT e RUT para cidadãos chilenos";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Australia")) {
+      pais = "conta, beneficiario, SWIFT e BSB (exclusivo Australia)";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Mexico")) {
+      pais = "CLABE, beneficiario, SWIFT e conta (se precisar, pois o CLABE geralmente ja vem com o numero de conta)";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else if (resp.equals("Outro")) {
+      pais = "conta , nome do beneficiario e SWIFT";
+      System.out.println("Será necessário ter os seguintes dados para prosseguir com seu envio : " + pais);
+    } else {
+      pais = "confirme o país de envio e retorne.";
+      System.out.println("Por gentileza, " + pais);
+    }
+
+    sc.close();
+  }
+
+}

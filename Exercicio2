@@ -1,0 +1,34 @@
+    /* Programa com objetivo de caçular a área de cinco formar geometricas lendo três valores com ponto flutuante de dupla precisão */
+
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+    Locale.setDefault(Locale.US);
+    Scanner sc = new Scanner(System.in);
+
+    double A, B, C, at, bc, ct, dq, er;
+
+    A = sc.nextDouble();
+    B = sc.nextDouble();
+    C = sc.nextDouble();
+    at = A * C / 2.0;
+    bc = 3.14159 * C * C;
+    ct = (A + B) * C / 2.0;
+    dq = 4.0 * B;
+    er = A * B;
+
+    System.out.printf("TRIANGULO:%.3f%n", at);
+    System.out.printf("CIRCULO:%.3f%n", bc);
+    System.out.printf("TRAPEZIO:%.3f%n", ct);
+    System.out.printf("QUADRADO:%.3f%n", dq);
+    System.out.printf("RETANGULO:%.3f%n", er);
+
+    sc.close();
+
+  }
+
+}
